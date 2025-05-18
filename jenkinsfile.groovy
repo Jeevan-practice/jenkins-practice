@@ -10,10 +10,10 @@ pipeline
             }
             steps
             {
-                sh 'maven --version'
+                sh 'mvn --version'
             }
         }
-        stage('Frond End')
+        stage('Front End')
         {
             agent{
                 docker{ image 'node:latest'}
